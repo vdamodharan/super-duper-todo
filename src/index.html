@@ -1,4 +1,4 @@
-<!DOCTYPE html ng-app="todoApp">
+<!DOCTYPE html ng-app="superdupertodoApp">
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -29,11 +29,17 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <form>
-            <div class="app">
-                    
-            </div>
-        </form>
+        <h2>Super Duper Todo</h2>
+        <div ng-controller="TodoListController as todoList">
+          <ul class="unstyled">
+            <li ng-repeat="todo in todoList.todos">
+              <label class="checkbox">
+                <input type="checkbox" ng-model="todo.done">
+                <span class="done-{{todo.done}}">{{todo.text}}</span>
+              </label>
+            </li>
+          </ul>          
+        </div>
 
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
 
