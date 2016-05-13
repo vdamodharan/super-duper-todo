@@ -1,4 +1,25 @@
 .done-true {
   text-decoration: line-through;
   color: grey;
+  opacity: 0.5;
+}
+
+.todoItem {
+	line-height: 30px;
+    font-family: monospace;
+    font-size: x-large;
+}
+
+h2{
+	font-family: monospace;
+    font-size: -webkit-xxx-large;
+    width: 30%;
+    margin: auto;
+}
+
+.styled{
+	margin: 0 auto;
+    width: 50%;
+    list-style: none;
+    padding: 3%;
 }

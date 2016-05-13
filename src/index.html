@@ -22,8 +22,8 @@
         <![endif]-->
         <h2>Super Duper Todo</h2>
         <div ng-controller="TodoListController as todoList">
-          <ul class="unstyled">
-            <li ng-repeat="todo in todoList.todos">
+          <ul class="styled">
+            <li class="todoItem" ng-repeat="todo in todoList.todos">
               <label class="checkbox">
                 <input type="checkbox" ng-model="todo.done">
                 <span class="done-{{todo.done}}">{{todo.text}}</span>
